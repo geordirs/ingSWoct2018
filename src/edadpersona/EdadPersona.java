@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edadpersona;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -19,12 +14,12 @@ public class EdadPersona {
      * @throws java.io.FileNotFoundException
      */
     public static void main(String[] args) throws FileNotFoundException {
-            //Modificar este campo para obtener la edad : AAAA/MM/DD
+            //Modificar este campo para calcular la edad : aaaa/mm/dd
 		System.out.println(calcular(new GregorianCalendar(1991,05,15)));
     }
    
     public static int calcular(Calendar fechaNac) throws FileNotFoundException {
-PrintStream edad = new PrintStream("Resultados.txt");
+PrintStream edad = new PrintStream("Calculo Edad.txt");
         Calendar fechaActual = Calendar.getInstance();
 
         int years = fechaActual.get(Calendar.YEAR) - fechaNac.get(Calendar.YEAR);
@@ -39,7 +34,7 @@ PrintStream edad = new PrintStream("Resultados.txt");
 
             years--;
         }
- edad.println("Tu edad es de: "+years+" años");
+ edad.println("La edad es de: "+years+" años");
         return years;
 
     }
