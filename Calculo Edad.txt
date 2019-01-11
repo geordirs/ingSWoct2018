@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 La edad es de: 27 años
+=======
+La edad es de: 27 años
+>>>>>>> ea21a1a755a90a61cd2cdbb6692e62fa9b66a0d5
